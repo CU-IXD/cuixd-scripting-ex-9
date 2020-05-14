@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pace Calculator</title>
+        <link type="text/css" rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 class="branding">Pace Calculator</h1>
+        <p class="pace-msg">
+            Your pace is
+            <em>
+                <span id="pace">0</span>
+                <span id="pace-unit">km</span>/hr
+            </em>
+        </p>
+        <form>
+            <p>Enter the distance and duration of your run to calculate the average pace.</p>
+            <ul>
+                <li id="distance-fields" class="field-row">
+                    <label for="distance" class="fields-label">Distance</label>
+                    <div class="fields">
+                        <input name="distance" id="distance" type="text" 
+                               class="form-control" placeholder="0" />
+                        <select id="distance-units" name="distance-units" 
+                                class="form-control">
+                            <option value="km">km</option>
+                            <option value="mi">mi</option>
+                        </select>
+                    </div>
+                    <span class="help-block"></span>
+                </li>
+                <li id="duration-fields" class="field-row">
+                    <span class="label">Duration</span>
+                    <ul class="fields">
+                        <li>
+                            <label for="duration-hr">hr</label>
+                            <input type="text" name="duration-hr" id="duration-hr" 
+                                   class="form-control" placeholder="0" />
+                        </li>
+                        <li>
+                            <label for="duration-min">min</label>
+                            <input type="text" name="duration-min" id="duration-min" 
+                                   class="form-control" placeholder="0" />
+                        </li>
+                        <li>
+                            <label for="duration-sec">sec</label>
+                            <input type="text" name="duration-sec" id="duration-sec" 
+                                   class="form-control" placeholder="0" />
+                        </li>
+                    </ul>
+                    <span class="help-block"></span>
+                </li>
+            </ul>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

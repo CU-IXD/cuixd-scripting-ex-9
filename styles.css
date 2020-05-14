@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-size:62.5%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* Site styles */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+body {
+    width:320px;
+    padding-top:35px;
+    margin:0 auto;
+    background-color:white;
+    color:#262626;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif; 
+    font-weight: 300;
+    height:568px;
+    background: rgb(110,203,136);
+    background: -moz-linear-gradient(top,  rgb(110,203,136) 0%, rgb(71,168,233) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(110,203,136)), color-stop(100%,rgb(71,168,233)));
+    background: -webkit-linear-gradient(top,  rgb(110,203,136) 0%,rgb(71,168,233) 100%);
+    background: -o-linear-gradient(top,  rgb(110,203,136) 0%,rgb(71,168,233) 100%);
+    background: -ms-linear-gradient(top,  rgb(110,203,136) 0%,rgb(71,168,233) 100%);
+    background: linear-gradient(to bottom,  rgb(110,203,136) 0%,rgb(71,168,233) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ecb88', endColorstr='#47a8e9',GradientType=0 );
+
+}
+
+#distance { width:85px; text-align: right; margin-right:20px; }
+#distance-units { width:60px; }
+#distance-fields label { margin-top:12px; }
+#duration-fields .label { margin-top:29px; }
+#duration-hr { width:42px; text-align:center; }
+#duration-min { width:42px; text-align:center; }
+#duration-sec { width:42px; text-align:center; }
+
+.fields {
+    float:left;
+    width:60%;
+}
+
+.fields label {
+    float:none;
+    width:auto;
+    text-align: center;
+    font-size:1.6em;
+    margin-bottom:3px;
+}
+
+.fields li {
+    float:left;
+    clear:none; 
+    margin-right:20px; 
+    padding:0;
+    margin-bottom:0;
+}
+
+.fields li:last-child {
+    margin-right:0;
+}
+
+form .invalid {
+    background-color:rgba(228,244,190, 0.5);
+    border:1px solid #8B850A;
+    border-left:none;
+    border-right:none;
+}
+
+form li {
+    font-size:1em; 
+    padding:10px 20px 10px 20px;
+    clear:both;
+    min-height:60px;
+    margin-bottom:-1px;
+}
+
+form li:after { 
+    content:""; 
+    clear:both; 
+    display:block; 
+}
+
+form > p:first-of-type {
+    margin-bottom:30px;
+    padding:0 20px;
+}
+
+h1 { 
+    font-size:2.8em;
+    text-align: center;
+}
+
+.help-block {
+    font-size:1.3em; 
+    color:#8B850A;
+    text-align: right;
+    display: block;
+    clear:both;
+    padding:9px 4px 0 0;
+}
+
+html {
+    background-color:grey; 
+}
+
+input {
+    border-radius:5px;
+    border:1px solid rgba(29,29,29,0.6);
+    padding:8px 10px; 
+    box-sizing: border-box;
+    font-size:1.6em; 
+    font-weight:200;
+    color:#262626;
+    background-color: rgba(100%, 100%, 100%, 0.5);
+}
+
+label, .label {
+    display: block;
+    font-size:1.8em;
+    float:left;
+    width:110px;
+}
+
+li {
+    font-size:1.3em;
+}
+
+p {
+    font-size:1.3em;
+    line-height:1.4em;
+}
+
+.pace-msg {
+    font-size:1.8em; 
+    font-weight: 200;
+    text-align: center;
+    margin-top:90px; 
+    margin-bottom:50px;
+}
+
+.pace-msg em {
+    display: block;
+    font-size:2.33em;
+    margin-top:10px;
+}
+
+select {
+    background-image: none; 
+    border-radius:3px;
+    border:1px solid rgba(29,29,29,0.6);
+    padding:5px 10px;
+    box-sizing: border-box; 
+    height:36px;
+    font-size:1.6em; 
+    position: relative;
+    top:-1px;
+    background-color: rgba(100%, 100%, 100%, 0.5);
+}
